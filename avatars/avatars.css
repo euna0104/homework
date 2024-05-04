@@ -10,4 +10,46 @@
 .avatar-row {
   display: flex;
   margin-bottom: 20px;
+  justify-content: flex-end;
+}
+
+body {
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-with-circle {
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    display: block; /* 이미지가 블록 요소로 표시되어 이미지 아래에 작은 원이 배치됩니다. */
+}
+
+.circle1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #DBDBDB;
+    border-radius: 50%;
+    margin-bottom: 29px;
+    margin-right: 18px;
+}
+
+.circle2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #4CFE88;
+    border-radius: 50%;
+    margin-bottom: 29px;
+    margin-right: 18px;
 }
