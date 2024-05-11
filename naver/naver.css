@@ -1,3 +1,8 @@
+body {
+  margin-top: 100px;
+  text-align: center;
+}
+
 /* input 컴포넌트 */
 .form-input{
   --spacing: 10px;
@@ -34,20 +39,20 @@
   }
 }
 
-
-
 /* button 컴포넌트 */
 .button{
-  --bg-color:var(--orange-200);
-  --color: var(--white);
+  --bg-color: #03cf5d;
+  --color: white;
   --radius: 3px;
 
   border: 0;
+  font-weight: bold;
   padding: 16px 10px;
   background-color: var(--bg-color);
   color: var(--color);
   border-radius: var(--radius);
   white-space: nowrap;
+  margin: 15px;
 }
 
 
