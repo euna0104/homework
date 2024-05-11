@@ -1,1 +1,166 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import url(/style/reset.css);
+@import url(/style/theme.css);
+@import url(/style/base.css);
+
+/* input 컴포넌트 */
+.form-input{
+  --spacing: 10px;
+  --border-color: var(--gray-500);
+  --radius: 3px;
+  border-bottom: 1px solid #fff;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing);
+  align-items: center;
+
+  label{
+    white-space: nowrap;
+  }
+
+  input{
+    flex-grow: 1;
+    /* border: 1px solid var(--border-color); */
+    border: 0;
+    border-radius: var(--radius);
+    padding: 1px 1px 1px 8px;
+    height: 24px;
+    block-size: 24px;
+    width: 100%;
+  }
+
+  input:focus {
+    outline: 0;
+  }
+  
+  &:focus-within{
+    border-bottom-color: red;
+  }
+}
+
+
+
+/* button 컴포넌트 */
+.button{
+  --bg-color:var(--orange-200);
+  --color: var(--white);
+  --radius: 3px;
+
+  border: 0;
+  padding: 16px 10px;
+  background-color: var(--bg-color);
+  color: var(--color);
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+
+
+
+/* 링크 텍스트 컴포넌트 (아이콘 유형) */
+.icon-link{
+  --color: var(--orange-200);
+
+  [class*='fas']{
+    color: var(--color);
+    padding-right: 0.25em;
+    padding-inline-end: 0.25em;
+  }
+}
+
+
+/* 로그인 */
+.login{
+  /* 로그인 변수 */
+  --start-color: var(--orange-100);
+  --end-color: var(--orange-200);
+  --shadow-color: var(--gray-700);
+  --spacing: 10px;
+  --radius: 5px;
+  --shadow-depth: 5px;
+  --bg-color: var(--white);
+  --border-color: var(--gray-500);
+
+  background-image: radial-gradient(circle at right top, var(--start-color,), var(--end-color));
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  box-shadow: var(--shadow-depth) var(--shadow-depth) 0 0 var(--shadow-color);
+
+/* 로그인 제목 */
+.login-title{
+  --color: var(--yellow);
+  
+  color: var(--color);
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+/* 로그인 폼 */
+.login-form{
+  margin-top: var(--spacing);
+  margin-block-start: var(--spacing);
+  background-color: var(--bg-color);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: var(--spacing);
+
+    fieldset{
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      flex-flow: row nowrap;
+      gap: var(--spacing);
+      padding-bottom: var(--spacing);
+      padding-block-end: var(--spacing);
+    }
+
+    .login-input-group{
+      flex-grow: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      gap: var(--spacing);
+
+      label{
+        min-width: 4em;
+        min-inline-size: 4em;
+      }
+    }
+  } 
+
+  /* 체크박스 숨기기 */
+#toggleCheckbox {
+  display: none;
+}
+
+/* ON 상태 스타일 */
+#toggleCheckbox:not(:checked) + #toggleText:before {
+  content: "ON";
+  color: green; /* ON일 때의 글자 색상 */
+}
+
+/* OFF 상태 스타일 */
+#toggleCheckbox:checked + #toggleText:before {
+  content: "OFF";
+  color: red; /* OFF일 때의 글자 색상 */
+}
+
+/* 텍스트 스타일 */
+#toggleText {
+  cursor: pointer;
+}
+
+/* 가상 요소를 통해 텍스트 스타일링 */
+#toggleText:before {
+  content: "ON";
+}
+
+/* 텍스트를 클릭할 때마다 체크박스 상태가 변경됨 */
+#toggleText {
+  pointer-events: auto;
+}
+
+#toggleText:before {
+  pointer-events: none;
+}
+
+#toggleText:active:before {
+  content: "OFF";
+  color: red; /* OFF일 때의 글자 색상 */
+}
