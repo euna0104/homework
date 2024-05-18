@@ -13,7 +13,121 @@ html {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   height: 31.25rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 80px;
+  z-index: 1;
+  color: white;
+  font-size: 80px;
+  width: 500px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title2 {
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  color: black;
+  font-size: 80px;
+  width: 500px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title3 {
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  color: white;
+  font-size: 80px;
+  width: 500px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub1 {
+  position: absolute;
+  top: 190px;
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub2 {
+  position: absolute;
+  top: 280px;
+  z-index: 1;
+  color: grey;
+  font-size: 30px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub3 {
+  position: absolute;
+  top: 115px;
+  z-index: 1;
+  color: black;
+  font-size: 30px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub4 {
+  position: absolute;
+  top: 115px;
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
