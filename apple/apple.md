@@ -6,6 +6,8 @@
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+![alt text](<스크린샷 2024-05-18 220612.png>)
+![alt text](<스크린샷 2024-05-18 220621.png>)
 
 🫥 [아쉬운점]
 
