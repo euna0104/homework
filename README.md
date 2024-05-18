@@ -8,4 +8,7 @@
 
 
 ### 2차 과제
-리드미 페이지: (https://github.com/euna0104/homework/blob/main/naver/naver.md)
+리드미 페이지: https://github.com/euna0104/homework/blob/main/naver/naver.md
+
+### 3차 과제
+리드미 페이지: https://github.com/euna0104/homework/blob/main/apple/apple.md
